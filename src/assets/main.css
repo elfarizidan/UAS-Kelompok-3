@@ -1,0 +1,275 @@
+/* ============================================================
+   KELOMPOK 3 — DESIGN SYSTEM
+   Portfolio Website — UI Lanjut
+   ============================================================ */
+
+/* ---- Google Fonts ---- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
+
+/* ---- CSS Reset ---- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- CSS Custom Properties ---- */
+:root {
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Syne', system-ui, sans-serif;
+
+  /* Type Scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+  --space-40: 10rem;
+  --space-48: 12rem;
+
+  /* Container */
+  --container-max: 1280px;
+  --container-pad: 2rem;
+
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+  --transition-xslow: 600ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Z-index */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 9999;
+  --z-toast: 10000;
+}
+
+/* ---- LIGHT THEME (default) ---- */
+:root,
+[data-theme="light"] {
+  --color-bg: #F7F5F2;
+  --color-bg-alt: #EDEAE6;
+  --color-bg-elevated: #FFFFFF;
+  --color-surface: #FFFFFF;
+  --color-border: #D8D3CC;
+  --color-border-subtle: #E8E4DF;
+
+  --color-text: #1A1714;
+  --color-text-secondary: #5C564E;
+  --color-text-muted: #9C9188;
+  --color-text-inverse: #F7F5F2;
+
+  --color-accent: #1A1714;
+  --color-accent-hover: #2D2924;
+  --color-accent-fg: #F7F5F2;
+
+  --color-highlight: #C8773A;
+  --color-highlight-subtle: rgba(200, 119, 58, 0.08);
+
+  --color-success: #2D6A4F;
+  --color-error: #C0392B;
+  --color-warning: #E67E22;
+
+  --shadow-sm: 0 1px 3px rgba(26, 23, 20, 0.08);
+  --shadow-md: 0 4px 16px rgba(26, 23, 20, 0.08);
+  --shadow-lg: 0 12px 40px rgba(26, 23, 20, 0.12);
+  --shadow-xl: 0 24px 64px rgba(26, 23, 20, 0.16);
+}
+
+/* ---- DARK THEME ---- */
+[data-theme="dark"] {
+  --color-bg: #0E0D0C;
+  --color-bg-alt: #161412;
+  --color-bg-elevated: #1E1B18;
+  --color-surface: #252220;
+  --color-border: #2E2B28;
+  --color-border-subtle: #231F1D;
+
+  --color-text: #F0EDE8;
+  --color-text-secondary: #A09890;
+  --color-text-muted: #625D58;
+  --color-text-inverse: #0E0D0C;
+
+  --color-accent: #F0EDE8;
+  --color-accent-hover: #FFFFFF;
+  --color-accent-fg: #0E0D0C;
+
+  --color-highlight: #D4845A;
+  --color-highlight-subtle: rgba(212, 132, 90, 0.1);
+
+  --color-success: #4ADE80;
+  --color-error: #F87171;
+  --color-warning: #FBBF24;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.6);
+}
+
+/* ---- Base ---- */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition: background-color var(--transition-slow), color var(--transition-slow);
+  overflow-x: hidden;
+}
+
+/* ---- Typography ---- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+p { line-height: 1.7; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* ---- Utility Classes ---- */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: var(--radius-full); }
+::-webkit-scrollbar-thumb:hover { background: var(--color-text-muted); }
+
+/* ---- Focus ---- */
+:focus-visible {
+  outline: 2px solid var(--color-highlight);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ---- Selection ---- */
+::selection {
+  background: var(--color-highlight);
+  color: white;
+}
+
+/* ---- Page transitions ---- */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+/* ---- Fade transition ---- */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity var(--transition-base);
+}
+.fade-enter-from, .fade-leave-to { opacity: 0; }
+
+/* ---- Slide-up transition ---- */
+.slide-up-enter-active, .slide-up-leave-active {
+  transition: all var(--transition-xslow);
+}
+.slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(24px);
+}
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(-16px);
+}
+
+/* ---- Responsive breakpoints ---- */
+@media (max-width: 1024px) {
+  :root { --container-pad: 1.5rem; }
+}
+@media (max-width: 768px) {
+  :root {
+    --container-pad: 1.25rem;
+    --text-5xl: 2.25rem;
+    --text-6xl: 2.75rem;
+    --text-7xl: 3.25rem;
+    --text-8xl: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  :root {
+    --container-pad: 1rem;
+    --text-5xl: 2rem;
+    --text-6xl: 2.5rem;
+  }
+}
+
