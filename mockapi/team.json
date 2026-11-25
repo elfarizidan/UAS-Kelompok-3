@@ -1,0 +1,136 @@
+[
+  {
+    "name": "Kelompok 3",
+    "codename": "SQUAD 03",
+    "tagline": "Lima agen. Satu misi. Produk digital yang tepat sasaran.",
+    "summary": "Kami adalah tim mahasiswa semester 7 yang berfokus pada desain UI/UX dan pengembangan web. Setiap anggota membawa peran berbeda, dari riset pengguna hingga implementasi front-end, untuk menghasilkan produk yang rapi, cepat, dan mudah digunakan.",
+    "mission": "Merancang dan membangun solusi digital yang berpusat pada pengguna melalui kolaborasi, iterasi cepat, dan keputusan berbasis data.",
+    "values": [
+      {
+        "code": "01",
+        "title": "Presisi",
+        "description": "Setiap piksel dan baris kode punya alasan. Kami mengukur sebelum memutuskan."
+      },
+      {
+        "code": "02",
+        "title": "Kerja Tim",
+        "description": "Peran jelas, komunikasi terbuka, dan saling menutup celah seperti satu regu."
+      },
+      {
+        "code": "03",
+        "title": "Berpusat pada Pengguna",
+        "description": "Riset dan uji pengguna menjadi dasar setiap keputusan desain."
+      },
+      {
+        "code": "04",
+        "title": "Iterasi Cepat",
+        "description": "Rilis kecil, terima umpan balik, perbaiki, ulangi."
+      }
+    ],
+    "stats": [
+      {
+        "label": "Anggota",
+        "value": "5"
+      },
+      {
+        "label": "Proyek",
+        "value": "4"
+      },
+      {
+        "label": "Semester",
+        "value": "7"
+      }
+    ],
+    "email": "kelompok3@example.com",
+    "github": "https://github.com/kelompok3",
+    "linkedin": "https://www.linkedin.com/company/kelompok3",
+    "location": "Indonesia",
+    "members": [
+      {
+        "id": "1",
+        "name": "Zidan",
+        "role": "Front-End Developer",
+        "agentClass": "DUELIST",
+        "bio": "Mengubah desain menjadi antarmuka Vue yang responsif dan cepat. Suka merapikan komponen agar mudah dipakai ulang.",
+        "skills": [
+          "Vue.js",
+          "JavaScript",
+          "CSS",
+          "Git"
+        ],
+        "avatar": "",
+        "email": "zidan@example.com",
+        "github": "https://github.com/zidan",
+        "linkedin": "https://www.linkedin.com/in/zidan"
+      },
+      {
+        "id": "2",
+        "name": "Danu",
+        "role": "UI Designer",
+        "agentClass": "INITIATOR",
+        "bio": "Merancang sistem visual, komponen, dan prototipe interaktif di Figma.",
+        "skills": [
+          "Figma",
+          "Design System",
+          "Prototyping",
+          "Typography"
+        ],
+        "avatar": "",
+        "email": "danu@example.com",
+        "github": "https://github.com/danu",
+        "linkedin": "https://www.linkedin.com/in/danu"
+      },
+      {
+        "id": "3",
+        "name": "Fadhil",
+        "role": "UX Researcher",
+        "agentClass": "SENTINEL",
+        "bio": "Menyusun wawancara, usability testing, dan merangkum temuan menjadi kebutuhan produk.",
+        "skills": [
+          "User Research",
+          "Usability Testing",
+          "Persona",
+          "Journey Map"
+        ],
+        "avatar": "",
+        "email": "fadhil@example.com",
+        "github": "https://github.com/fadhil",
+        "linkedin": "https://www.linkedin.com/in/fadhil"
+      },
+      {
+        "id": "4",
+        "name": "Made",
+        "role": "Back-End Developer",
+        "agentClass": "CONTROLLER",
+        "bio": "Membangun API dan struktur data yang menopang fitur aplikasi.",
+        "skills": [
+          "Node.js",
+          "REST API",
+          "MySQL",
+          "Firebase"
+        ],
+        "avatar": "",
+        "email": "made@example.com",
+        "github": "https://github.com/made",
+        "linkedin": "https://www.linkedin.com/in/made"
+      },
+      {
+        "id": "5",
+        "name": "Zulfa",
+        "role": "Project Manager",
+        "agentClass": "INITIATOR",
+        "bio": "Mengatur sprint, timeline, dan dokumentasi agar tim tetap fokus pada target.",
+        "skills": [
+          "Scrum",
+          "Notion",
+          "Documentation",
+          "Copywriting"
+        ],
+        "avatar": "",
+        "email": "zulfa@example.com",
+        "github": "https://github.com/zulfa",
+        "linkedin": "https://www.linkedin.com/in/zulfa"
+      }
+    ]
+  }
+]

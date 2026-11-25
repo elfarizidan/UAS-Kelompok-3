@@ -1,0 +1,114 @@
+[
+  {
+    "title": "Kedai Kopi App",
+    "summary": "Aplikasi pemesanan kopi untuk UMKM dengan alur checkout tiga langkah.",
+    "category": "Mobile App",
+    "year": "2026",
+    "featured": true,
+    "technologies": ["Figma", "Vue.js", "Firebase"],
+    "background": "Pelanggan kedai lokal sering antre lama saat jam sibuk. Pemilik tidak punya sistem pesanan digital.",
+    "goals": [
+      "Memangkas waktu antre pelanggan",
+      "Memberi pemilik rekap pesanan harian",
+      "Membuat alur pesan yang bisa dipakai tanpa panduan"
+    ],
+    "features": [
+      "Katalog menu dengan filter kategori",
+      "Keranjang dan checkout tiga langkah",
+      "Status pesanan real-time",
+      "Dashboard rekap penjualan"
+    ],
+    "gallery": ["Halaman Menu", "Keranjang", "Status Pesanan"],
+    "contributions": [
+      { "member": "Zidan", "task": "Implementasi halaman menu dan keranjang" },
+      { "member": "Danu", "task": "Desain UI dan komponen" },
+      { "member": "Fadhil", "task": "Wawancara pemilik dan pelanggan" },
+      { "member": "Made", "task": "Struktur data dan Firebase" },
+      { "member": "Zulfa", "task": "Timeline dan dokumentasi" }
+    ]
+  },
+  {
+    "title": "Portal Ramadhan",
+    "summary": "Website jadwal kegiatan dan donasi masjid selama bulan Ramadhan.",
+    "category": "Website",
+    "year": "2026",
+    "featured": true,
+    "technologies": ["Vue.js", "Node.js", "MySQL"],
+    "background": "Informasi kegiatan masjid tersebar di grup chat sehingga jamaah sering ketinggalan jadwal.",
+    "goals": [
+      "Satu sumber informasi jadwal kegiatan",
+      "Mempermudah pencatatan donasi",
+      "Bisa diakses lancar dari ponsel"
+    ],
+    "features": [
+      "Kalender kegiatan harian",
+      "Form donasi dengan rekap",
+      "Pengumuman dari pengurus",
+      "Panel admin sederhana"
+    ],
+    "gallery": ["Beranda", "Kalender", "Panel Admin"],
+    "contributions": [
+      { "member": "Zidan", "task": "Halaman kalender dan pengumuman" },
+      { "member": "Danu", "task": "Visual identity dan layout" },
+      { "member": "Fadhil", "task": "Usability testing dengan jamaah" },
+      { "member": "Made", "task": "REST API dan database" },
+      { "member": "Zulfa", "task": "Koordinasi dengan pengurus" }
+    ]
+  },
+  {
+    "title": "Oryza Farm Monitor",
+    "summary": "Dashboard pemantauan lahan padi berbasis data sensor.",
+    "category": "Dashboard",
+    "year": "2025",
+    "featured": true,
+    "technologies": ["Figma", "Vue.js", "Chart.js", "REST API"],
+    "background": "Petani sulit memantau kondisi air dan kelembapan lahan tanpa datang langsung ke sawah.",
+    "goals": [
+      "Menampilkan data sensor dengan jelas",
+      "Memberi peringatan dini kondisi kritis",
+      "Mudah dipahami pengguna awam"
+    ],
+    "features": [
+      "Grafik kelembapan dan ketinggian air",
+      "Notifikasi ambang batas",
+      "Riwayat data mingguan",
+      "Mode tampilan sederhana"
+    ],
+    "gallery": ["Dashboard", "Grafik", "Notifikasi"],
+    "contributions": [
+      { "member": "Zidan", "task": "Komponen grafik dan dashboard" },
+      { "member": "Danu", "task": "Desain dashboard" },
+      { "member": "Fadhil", "task": "Riset kebutuhan petani" },
+      { "member": "Made", "task": "Integrasi API sensor" },
+      { "member": "Zulfa", "task": "Manajemen sprint" }
+    ]
+  },
+  {
+    "title": "Redesign Portal Akademik",
+    "summary": "Studi kasus redesign portal akademik kampus agar KRS lebih cepat diisi.",
+    "category": "UI/UX Case Study",
+    "year": "2025",
+    "featured": false,
+    "technologies": ["Figma", "Maze", "FigJam"],
+    "background": "Mahasiswa mengeluhkan alur pengisian KRS yang panjang dan membingungkan.",
+    "goals": [
+      "Memangkas langkah pengisian KRS",
+      "Menurunkan salah pilih kelas",
+      "Meningkatkan skor SUS"
+    ],
+    "features": [
+      "Alur KRS baru dengan ringkasan",
+      "Pencarian mata kuliah",
+      "Deteksi bentrok jadwal",
+      "Prototipe high-fidelity"
+    ],
+    "gallery": ["Alur Lama vs Baru", "Pencarian", "Ringkasan KRS"],
+    "contributions": [
+      { "member": "Zidan", "task": "Prototipe interaktif" },
+      { "member": "Danu", "task": "Wireframe dan high-fidelity" },
+      { "member": "Fadhil", "task": "Survei dan uji SUS" },
+      { "member": "Made", "task": "Analisis alur sistem lama" },
+      { "member": "Zulfa", "task": "Laporan studi kasus" }
+    ]
+  }
+]

@@ -1,0 +1,279 @@
+/* ==========================================================
+   Theme tokens - tactical shooter style (red / navy / cream)
+   ========================================================== */
+:root {
+  --red: #ff4655;
+  --red-dark: #bd3944;
+  --red-deep: #8f1f2b;
+  --navy: #0f1923;
+  --navy-2: #1b2733;
+  --navy-3: #2a3744;
+  --cream: #ece8e1;
+  --cream-2: #dcd7cf;
+  --white: #ffffff;
+  --muted: #8b978f;
+  --muted-light: #5b6670;
+
+  --font-display: 'Anton', 'Impact', sans-serif;
+  --font-cond: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-body: 'Barlow', system-ui, sans-serif;
+
+  --container: 1200px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --cut: 18px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--navy);
+  color: var(--navy);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* ---------- Section skins ---------- */
+.section {
+  position: relative;
+  padding: clamp(64px, 9vw, 120px) 0;
+  overflow: hidden;
+}
+
+.section--light {
+  background-color: var(--cream);
+  background-image: radial-gradient(rgba(15, 25, 35, 0.12) 1px, transparent 1px);
+  background-size: 14px 14px;
+  color: var(--navy);
+}
+
+.section--dark {
+  background: radial-gradient(ellipse at 50% 0%, var(--navy-3) 0%, var(--navy) 60%);
+  color: var(--cream);
+}
+
+.section--red {
+  background: linear-gradient(160deg, var(--red) 0%, var(--red-dark) 100%);
+  color: var(--white);
+}
+
+.section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Thin tactical frame lines along the section edges */
+.section--framed::before,
+.section--framed::after {
+  content: '';
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+  width: 1px;
+  background: currentColor;
+  opacity: 0.15;
+  z-index: 0;
+}
+.section--framed::before {
+  left: 24px;
+}
+.section--framed::after {
+  right: 24px;
+}
+
+/* ---------- Typography helpers ---------- */
+.eyebrow {
+  font-family: var(--font-cond);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.section--red .eyebrow {
+  color: var(--navy);
+}
+
+.lead {
+  font-size: 1.05rem;
+  max-width: 62ch;
+  opacity: 0.85;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  --btn-bg: var(--red);
+  --btn-fg: var(--white);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 30px;
+  border: 0;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-family: var(--font-cond);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: background 0.2s var(--ease), color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+
+.btn:hover {
+  --btn-bg: var(--navy);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn--dark {
+  --btn-bg: var(--navy);
+}
+.btn--dark:hover {
+  --btn-bg: var(--red);
+}
+
+.btn--light {
+  --btn-bg: var(--white);
+  --btn-fg: var(--navy);
+}
+.btn--light:hover {
+  --btn-bg: var(--navy);
+  --btn-fg: var(--white);
+}
+
+/* Bordered "framed" button like a game menu button */
+.btn-frame {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid currentColor;
+}
+
+/* ---------- Chips ---------- */
+.chip {
+  display: inline-block;
+  padding: 4px 10px;
+  font-family: var(--font-cond);
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--navy);
+  color: var(--cream);
+}
+
+.chip--red {
+  background: var(--red);
+  color: var(--white);
+}
+
+.chip--outline {
+  background: transparent;
+  border: 1px solid currentColor;
+  color: inherit;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ---------- Page transition ---------- */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.25s var(--ease), transform 0.25s var(--ease);
+}
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.page-leave-to {
+  opacity: 0;
+}
+
+/* ---------- Grids ---------- */
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
