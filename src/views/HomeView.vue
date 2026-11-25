@@ -31,7 +31,7 @@ const teamName = computed(() => team.data.value?.name || 'Kelompok 3')
           {{ team.data.value?.tagline || 'Memuat identitas tim...' }}
         </p>
         <div class="hero__actions">
-          <span class="btn-frame"><RouterLink to="/proyek" class="btn btn--light">Lihat Proyek</RouterLink></span>
+          <span class="btn-frame"><RouterLink to="/proyek" class="btn btn--lights">Lihat Proyek</RouterLink></span>
           <RouterLink to="/tim" class="hero__link">Kenali Tim</RouterLink>
         </div>
       </div>
@@ -138,10 +138,12 @@ const teamName = computed(() => team.data.value?.name || 'Kelompok 3')
   justify-content: flex-end;
   overflow: hidden;
   color: var(--white);
-  background:
-    linear-gradient(180deg, rgba(15, 25, 35, 0) 55%, rgba(15, 25, 35, 0.35) 100%),
-    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.04) 0 2px, transparent 2px 40px),
-    linear-gradient(165deg, #ff5a68 0%, var(--red) 40%, var(--red-dark) 100%);
+  background-color: var(--navy);
+  background-image:
+    linear-gradient(180deg, rgba(15, 25, 35, 0) 55%, rgba(15, 25, 35, 0.6) 100%),
+    url('/background.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero__inner {
@@ -189,7 +191,7 @@ const teamName = computed(() => team.data.value?.name || 'Kelompok 3')
 .hero__echo--bottom {
   bottom: 0;
   transform: translate(-50%, 72%);
-  -webkit-text-stroke-color: rgba(15, 25, 35, 0.3);
+  -webkit-text-stroke-color: rgba(255, 70, 85, 0.45);
 }
 
 .hero__eyebrow {
@@ -239,8 +241,8 @@ const teamName = computed(() => team.data.value?.name || 'Kelompok 3')
 }
 
 .hero__link:hover {
-  color: var(--navy);
-  border-color: var(--navy);
+  color: var(--red-dark);
+  border-color: var(--red-dark);
 }
 
 .hero__strip {

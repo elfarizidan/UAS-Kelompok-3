@@ -102,7 +102,7 @@ ul {
 }
 
 .section--dark {
-  background: radial-gradient(ellipse at 50% 0%, var(--navy-3) 0%, var(--navy) 60%);
+  background: (--navy);
   color: var(--cream);
 }
 
@@ -200,6 +200,16 @@ ul {
 }
 .btn--light:hover {
   --btn-bg: var(--navy);
+  --btn-fg: var(--white);
+}
+
+.btn--lights {
+  --btn-bg: var(--white);
+  --btn-fg: var(--navy);
+}
+
+.btn--lights:hover {
+  --btn-bg: var(--red-deep);
   --btn-fg: var(--white);
 }
 
