@@ -241,8 +241,8 @@ const teamName = computed(() => team.data.value?.name || 'Kelompok 3')
 }
 
 .hero__link:hover {
-  color: var(--red-dark);
-  border-color: var(--red-dark);
+  color: var(--red);
+  border-color: var(--red);
 }
 
 .hero__strip {
@@ -367,7 +367,7 @@ const teamName = computed(() => team.data.value?.name || 'Kelompok 3')
 /* ---------- Agents ---------- */
 .agents-section {
   padding-top: 0;
-  background: linear-gradient(180deg, var(--navy) 0%, #2b1820 100%);
+  background: var(--navy);
 }
 
 .agents {

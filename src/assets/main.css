@@ -209,7 +209,7 @@ ul {
 }
 
 .btn--lights:hover {
-  --btn-bg: var(--red-deep);
+  --btn-bg: var(--red);
   --btn-fg: var(--white);
 }
 
